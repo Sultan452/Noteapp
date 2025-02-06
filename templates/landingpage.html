@@ -1,0 +1,117 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NoteApp - A simple and efficient note-taking app to keep your thoughts organized.">
+    <title>NoteApp - Take Notes, Stay Organized</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .cta-button {
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 160px;
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+        section.hero {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            margin-bottom: 120px;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .hero-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero-image img {
+            max-width: 400px;
+            width: 100%;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background-color: #fafafa;
+        }
+        .feature {
+            text-align: center;
+            max-width: 250px;
+        }
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 16px;
+            color: #777;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NoteApp</h1>
+    <p>Take Notes. Stay Organized. Boost Productivity.</p>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Simple and Efficient Note-Taking App</h2>
+        <p>Whether you're jotting down ideas, creating to-do lists, or keeping track of important information, NoteApp makes it easy to stay organized.</p>
+        <a href="{% url 'create_note' %}" class="cta-button">Create now</a>
+    </div>
+   
+</section>
+
+
+<footer>
+    <p>&copy; 2025 NoteApp. All Rights Reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
